@@ -42,6 +42,13 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/portfolio', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'My portfolio',
+        welcomeText: `Welcome to Alexander's projects page`
+    });
+});
+
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About Page'
